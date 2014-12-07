@@ -47,17 +47,18 @@ var DisplayAdapter = function(game){
         set: function(stringythingy, color, startX, startY){
             var arr = Array.isArray(color); //check arr
             if(!arr && isNaN(color)) color = 0; //Default
-            var posOffsetX= 0, posOffsetY=0;
+            //var posOffsetX= 0, posOffsetY=0;
             for (var i = 0, len = stringythingy.length; i < len; i++) {
                 if(stringythingy[i]=="\n") {
-                    posOffsetX = 0;
-                    posOffsetY++;
+                    startX=0;
+                    startY++;
                 } else {
-                    if(arr) this.setChar(startX+posOffsetX, startY+posOffsetY, stringythingy[i], color[i]);
-                    else this.setChar(startX+posOffsetX, startY+posOffsetY, stringythingy[i], color);
-                    posOffsetX++;
+                    if(arr) this.setChar(startX, startY, stringythingy[i], color[i]);
+                    else this.setChar(startX, startY, stringythingy[i], color);
+                    startX++;
                 }
             }
+            return {x:startX, y:startY};
         },
         get: function(startX, startY, len){},
         setChar: function(x, y,char,color){

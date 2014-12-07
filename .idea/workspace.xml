@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f64fbeb4-b330-4c34-bca8-341852f4bcad" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/game/TerminalDrivers/TermTypeout.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/game/TerminalDriver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/DisplayAdapter.js" afterPath="$PROJECT_DIR$/js/game/DisplayAdapter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LundumDare31.iws" />
@@ -26,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="37" selection-start="869" selection-end="869" vertical-scroll-proportion="-0.88461536" vertical-offset="436" max-vertical-offset="1955">
+            <state line="50" column="32" selection-start="1897" selection-end="1897" vertical-scroll-proportion="0.21636364" vertical-offset="731" max-vertical-offset="2567">
               <folding />
             </state>
           </provider>
@@ -38,16 +40,34 @@
       <file leaf-file-name="DisplayAdapter.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/game/DisplayAdapter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="15" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2023">
+            <state line="52" column="28" selection-start="2004" selection-end="2004" vertical-scroll-proportion="0.0" vertical-offset="1464" max-vertical-offset="2040">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TerminalDriver.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TerminalDriver.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/game/TerminalDriver.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="334" selection-end="334" vertical-scroll-proportion="0.46179965" vertical-offset="0" max-vertical-offset="589">
+            <state line="50" column="49" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.0" vertical-offset="448" max-vertical-offset="1139">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TermTypeout.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/game/TerminalDrivers/TermTypeout.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="14" selection-start="0" selection-end="1240" vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="884">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TermOvertime.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/game/TerminalDrivers/TermOvertime.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="24" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
@@ -68,9 +88,11 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Game.html" />
-        <option value="$PROJECT_DIR$/game.html" />
         <option value="$PROJECT_DIR$/js/game/DisplayAdapter.js" />
+        <option value="$PROJECT_DIR$/js/game/TerminalDrivers/TermTypeout.js" />
         <option value="$PROJECT_DIR$/js/game/TerminalDriver.js" />
+        <option value="$PROJECT_DIR$/js/game/TerminalDrivers/TermOvertime.js" />
+        <option value="$PROJECT_DIR$/game.html" />
       </list>
     </option>
   </component>
@@ -181,7 +203,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TerminalDrivers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LundumDare31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LundumDare31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LundumDare31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LundumDare31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sounds" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -192,7 +254,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -205,6 +267,9 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Dev\PhpstormProjects\LundumDare31\js\game\TerminalDrivers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Dev\PhpstormProjects\LundumDare31\PSDs" />
       <recent name="F:\Dev\PhpstormProjects\LundumDare31\img" />
@@ -259,7 +324,11 @@
       <created>1417923432226</created>
       <updated>1417923432226</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Created Term">
+      <created>1417923976383</created>
+      <updated>1417923976383</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -307,7 +376,8 @@
     <MESSAGE value="Old not working DisplayAddaper.js pre 2d array" />
     <MESSAGE value="DisplayAddaper.js now working" />
     <MESSAGE value="DisplayAddaper.js now working&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="DisplayAddaper.js now working&#10;&#10;" />
+    <MESSAGE value="Created Term" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Term" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -320,23 +390,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game.html">
+    <entry file="file://$PROJECT_DIR$/js/game/TerminalDrivers/TermTypeout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="37" selection-start="869" selection-end="869" vertical-scroll-proportion="-0.88461536" vertical-offset="436" max-vertical-offset="1955">
+        <state line="30" column="14" selection-start="0" selection-end="1240" vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/game/DisplayAdapter.js">
+    <entry file="file://$PROJECT_DIR$/js/game/TerminalDrivers/TermOvertime.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="15" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2023">
+        <state line="25" column="24" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/game/TerminalDriver.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="334" selection-end="334" vertical-scroll-proportion="0.46179965" vertical-offset="0" max-vertical-offset="589">
+        <state line="50" column="49" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.0" vertical-offset="448" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game/DisplayAdapter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="28" selection-start="2004" selection-end="2004" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="2040">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="32" selection-start="1897" selection-end="1897" vertical-scroll-proportion="0.21636364" vertical-offset="731" max-vertical-offset="2567">
           <folding />
         </state>
       </provider>
