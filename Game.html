@@ -5,6 +5,8 @@
     <title>JackIn Jam</title>
     <script type="text/javascript" src="js/phaser.js"></script>
     <script type="text/javascript" src="js/game/DisplayAdapter.js"></script>
+    <script type="text/javascript" src="js/game/TerminalDrivers/TermTypeout.js"></script>
+    <script type="text/javascript" src="js/game/TerminalDriver.js"></script>
     <style type="text/css">
         body {
             margin: 0;
@@ -28,6 +30,7 @@
         //game.stage.scale.refresh();
         game.load.image('GameMask', 'assets/GameAreaMid.png');
         game.load.image('MonitorCover', 'assets/GameAreaTop.png');
+        game.load.audio('sfx', 'assets/sounds/140773__qubodup__computer-beep-sfx-for-videogames.wav');
     }
 
     var text;
@@ -35,10 +38,20 @@
 
     var keySpace, keyPlus, keyMinus;
 
+    var fx;
+
+    var crp; //Currently Running Program
+
+    function boop(){
+        fx.play();
+    }
+
     function create() {
         //text = this.game.add.text(60, 165, "00:╒════╗\n01:│▲►▼◄║\n02:╘════╝\n03:********\n04:* ▲►▼◄ *\n05:********\n06:\n07:\n08:\n09:\n10:\n11:\n12:\n13:\n14:\n15:\n16:\n17:\n18:\n19:\n20:\n21:\n22:\n23:\n24:\n25:", { font: DefaultConsoleSettings.Size+"px ‘Lucida Console’, Monaco,monospace", fill: "#00BB1C", align: "left"} );
-        this.display = new DisplayAdapter(game);
-        this.display.set("00:╒════╗\n01:│▲►▼◄║\n02:╘════╝\n03:********\n04:* ▲►▼◄ *\n05:********\n06:\n07:\n08:\n09:\n10:\n11:\n12:\n13:\n14:\n15:\n16:\n17:\n18:\n19:\n20:\n21:\n22:\n23:\n24:\n25:", [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 0, 0);
+        //this.display = new DisplayAdapter(game);
+        //this.term = new TerminalDriver(this.display);
+
+        //this.display.set("00:╒════╗\n01:│▲►▼◄║\n02:╘════╝\n03:********\n04:* ▲►▼◄ *\n05:********\n06:\n07:\n08:\n09:\n10:\n11:\n12:\n13:\n14:\n15:\n16:\n17:\n18:\n19:\n20:\n21:\n22:\n23:\n24:\n25:", [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 0, 0);
 
         this.game.add.sprite(0, 0, 'GameMask');
         this.game.add.sprite(0, 0, 'MonitorCover');
@@ -48,14 +61,22 @@
         this.keySpace = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
         this.keyPlus = game.input.keyboard.addKey(Phaser.Keyboard.NUMPAD_ADD);
         this.keyMinus = game.input.keyboard.addKey(Phaser.Keyboard.NUMPAD_SUBTRACT);
+
+        fx = game.add.audio('sfx');
     }
 
     var lastMove= "zomgwtf", movetime = 1;
 
+    var first =true;
     function update() {
+        if(first){
+            first=false;
+            fx.play();
+        }
         if(lastMove=="zomgwtf") lastMove=game.time.now;
 
         this.display.tick();
+        this.term.tick();
         /*
         //  For example this checks if the up or down keys are pressed and moves the camera accordingly.
         if (cursors.up.isDown && game.time.elapsedSecondsSince(lastMove)>movetime)
