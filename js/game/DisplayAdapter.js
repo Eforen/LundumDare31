@@ -15,52 +15,57 @@ var DisplayAdapter = function(game){
         dispOffsetY: 165,
         game: "nogame",
         clear: function(){
-            this.text="";
+            this.text=[];
 
             //Prime raw text
             for(var y= 0; y<this.dispNumRows; y++){
-                this.text+=y+":";
-                for(var x = 0; x-3< this.dispNumCols; x++){
-                    this.text += " ";
+                //this.text+=y+":";
+                this.text[y]=[];
+                for(var x = 0; x< this.dispNumCols; x++){
+                    this.text[y][x] = " ";
                 }
-                this.text+="\n";
+                //this.text+="\n";
             }
 
             //Prime color array
-            for (var i = 0, len = this.text.length; i < len; i++) {
-                this.tcolor[i] = 0;
+            for(var y= 0; y<this.dispNumRows; y++){
+                this.tcolor[y]=[];
+                for(var x = 0; x< this.dispNumCols; x++){
+                    this.tcolor[y][x] = 0;
+                }
             }
 
             //Prime Split color array
             for (var i = 0, len = this.colors.length; i < len; i++) {
-                this.texts[i] = this.text;
                 if(typeof this.textOBJs[i] === "undefined"){
-                    this.textOBJs[i] = this.game.add.text(this.dispOffsetX, this.dispOffsetY, this.text, { font: this.size+"px "+this.font, fill: "#"+this.colors[i], align: "left"} );
+                    this.textOBJs[i] = this.game.add.text(this.dispOffsetX, this.dispOffsetY, "", { font: this.size+"px "+this.font, fill: "#"+this.colors[i], align: "left"} );
                     //console.log('this.game.add.text('+this.dispOffsetX+', '+this.dispOffsetY+', "'+this.text+'", { font: "'+this.size+'px '+this.font+'", fill: "#'+this.colors[i]+'", align: "left"} )')
                 }
                 this.needsUpdate[i]=true;
-                this.textOBJs[i].setText(this.text);
             }
         },
-        set: function(stringythingy, color, startIndex){
+        set: function(stringythingy, color, startX, startY){
             var arr = Array.isArray(color); //check arr
             if(!arr && isNaN(color)) color = 0; //Default
-            var posOffset=0;
+            var posOffsetX= 0, posOffsetY=0;
             for (var i = 0, len = stringythingy.length; i < len; i++) {
-                if(stringythingy[i]=="\n") posOffset+=this.dispNumCols;
-                if(arr) this._setChar(startIndex+i+posOffset, stringythingy[i], color[i]);
-                else this._setChar(startIndex+i+posOffset, stringythingy[i], color);
+                if(stringythingy[i]=="\n") {
+                    posOffsetX = 0;
+                    posOffsetY++;
+                } else {
+                    if(arr) this.setChar(startX+posOffsetX, startY+posOffsetY, stringythingy[i], color[i]);
+                    else this.setChar(startX+posOffsetX, startY+posOffsetY, stringythingy[i], color);
+                    posOffsetX++;
+                }
             }
         },
-        get: function(startIndex, endIndex){},
+        get: function(startX, startY, len){},
         setChar: function(x, y,char,color){
-            this._setChar(this.getIndex(x,y),char,color);
-        },
-        _setChar: function(i,char,color){
-            if(i<this.text.length){
-                if(this.texts[color][i]!=char){
+            if(x>=0 && x<this.dispNumCols && y>=0 && y<this.dispNumRows){
+                if(this.text[y][x]!=char || this.tcolor[y][x]== color){
                     this.needsUpdate[color] = true;
-                    this.texts[color]=this._setCharAt(this.texts[color],i,char);
+                    if(this.text[y][x]!=" ") this.needsUpdate[this.tcolor[y][x]]=true;
+                    this.text[y][x]=char[0];
                 }
             }
         },
@@ -68,24 +73,25 @@ var DisplayAdapter = function(game){
             if(y!=0) return x+((this.dispNumCols+1)*y)+1;
             return x+((this.dispNumCols)+1*y);
         },
-        text: "",
-        texts: [],
+        text: [],
         textOBJs: [],
         tcolor: [],
         colors: ["2D882D","88CC88","55AA55","116611","004400","00BB1C"],
         needsUpdate: [false,false,false,false,false,false],
         tick: function(){
-            for (var i = 0, len = this.texts.length; i < len; i++) {
+            for (var i = 0, len = this.colors.length; i < len; i++) {
                 if(this.needsUpdate[i]){
-                    this.textOBJs[i].setText(this.texts[i]);
+                    var temp = "";
+                    for(var y= 0; y<this.dispNumRows; y++){
+                        for(var x = 0; x< this.dispNumCols; x++){
+                            if(this.tcolor[y][x]==i) temp+=this.text[y][x];
+                            else temp+=" ";
+                        }
+                        temp+="\n";
+                    }
+                    this.textOBJs[i].setText(temp);
                 }
             }
-        },
-
-        _setCharAt: function(str,index,chr) {
-            if(index > str.length-1) return str;
-            if(index == 0) return chr + str.substr(1);
-            return str.substr(0,index) + chr + str.substr(index+1);
         }
     };
 
@@ -95,7 +101,7 @@ var DisplayAdapter = function(game){
     //prime the text arrays and text char color array
     object.clear();
 
-    game.add.sprite(0, 0, 'GameMask');
+    //game.add.sprite(0, 0, 'GameMask');
 
     //setup the actual text render objects
     //for (var i = 0, len = this.colors.length; i < len; i++) {

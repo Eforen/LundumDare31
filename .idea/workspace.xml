@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f64fbeb4-b330-4c34-bca8-341852f4bcad" name="Default" comment="Sizes corrected">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/game/DisplayAdapter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Eforen.xml" />
+    <list default="true" id="f64fbeb4-b330-4c34-bca8-341852f4bcad" name="Default" comment="Old not working DisplayAddaper.js pre 2d array">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/snapshots/s1.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/colorPallet.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/DisplayAdapter.js" afterPath="$PROJECT_DIR$/js/game/DisplayAdapter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/game.html" afterPath="$PROJECT_DIR$/game.html" />
     </list>
     <ignored path="LundumDare31.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +32,7 @@
       <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="28" selection-start="2544" selection-end="2544" vertical-scroll-proportion="-17.23077" vertical-offset="521" max-vertical-offset="1955">
+            <state line="40" column="35" selection-start="1516" selection-end="1516" vertical-scroll-proportion="-19.192308" vertical-offset="181" max-vertical-offset="1955">
               <folding />
             </state>
           </provider>
@@ -39,7 +41,7 @@
       <file leaf-file-name="DisplayAdapter.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/game/DisplayAdapter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="16" selection-start="677" selection-end="677" vertical-scroll-proportion="0.38368055" vertical-offset="204" max-vertical-offset="1921">
+            <state line="94" column="9" selection-start="3756" selection-end="3756" vertical-scroll-proportion="0.8854167" vertical-offset="1088" max-vertical-offset="2023">
               <folding />
             </state>
           </provider>
@@ -238,7 +240,15 @@
       <created>1417868136964</created>
       <updated>1417868136964</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Old not working DisplayAddaper.js pre 2d array">
+      <created>1417920307298</created>
+      <updated>1417920307298</updated>
+    </task>
+    <task id="LOCAL-00005" summary="DisplayAddaper.js now working">
+      <created>1417923402424</created>
+      <updated>1417923402424</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -283,7 +293,9 @@
     <MESSAGE value="Made Monitor Images" />
     <MESSAGE value="MonoText working" />
     <MESSAGE value="Sizes corrected" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sizes corrected" />
+    <MESSAGE value="Old not working DisplayAddaper.js pre 2d array" />
+    <MESSAGE value="DisplayAddaper.js now working" />
+    <option name="LAST_COMMIT_MESSAGE" value="DisplayAddaper.js now working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -298,14 +310,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="28" selection-start="2544" selection-end="2544" vertical-scroll-proportion="-17.23077" vertical-offset="521" max-vertical-offset="1955">
+        <state line="40" column="35" selection-start="1516" selection-end="1516" vertical-scroll-proportion="-19.192308" vertical-offset="181" max-vertical-offset="1955">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/game/DisplayAdapter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="677" selection-end="677" vertical-scroll-proportion="0.38368055" vertical-offset="204" max-vertical-offset="1921">
+        <state line="94" column="9" selection-start="3756" selection-end="3756" vertical-scroll-proportion="0.8854167" vertical-offset="1088" max-vertical-offset="2023">
           <folding />
         </state>
       </provider>
