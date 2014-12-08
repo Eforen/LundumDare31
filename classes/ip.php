@@ -27,11 +27,11 @@ class IP {
 
 	public function getUnusedIP(){
 		//updated
-		if(file_exists(Config::get("data/ipmap"))) {
+		if(file_exists($GLOBALS['config']['root']['server']."/data/ipmap")) {
 			unset($this->_ip);
 			unset($this->_type);
 			unset($this->_value);
-			$lines = file(Config::get("data/ipmap"));//file in to an array
+			$lines = file($GLOBALS['config']['root']['server']."/data/ipmap");//file in to an array
 			$a = rand(1,255);
 			$b = rand(1,255);
 			$c = rand(1,255);
@@ -41,18 +41,22 @@ class IP {
 				for($tb=$b; $tb!=$b || $fb; $tb++){
 					for($tc=$c; $tc!=$c || $fc; $tc++){
 						for($td=$d; $td!=$d || $fd; $td++){
-							if($this->_checkIPinList($lines, $ta.".".$tb.".".$tc.".".$td)){
+							if(!$this->_checkIPinList($lines, $ta.".".$tb.".".$tc.".".$td)){
 								$this->_ip = $ta.".".$tb.".".$tc.".".$td;
+								return true;
 							}
 						}
 					}
 				}
 			}
 		}
+		return false;
 	}
 
 	private function _checkIPinList($list, $check){
-		foreach($list as $entry) if(split("|",$entry)[0]==$check) return true;
+		foreach($list as $entry)
+			if(strpos($entry, $check."|") !== FALSE)
+				return true;
 		return false;
 	}
 

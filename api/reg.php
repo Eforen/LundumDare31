@@ -55,7 +55,7 @@ if(Input::exists("get")) {
 			if(($ip->getUnusedIP() || true)&&$user->create($ip, Input::get('username'),Input::get('password'))) {
 				echo('OK|You have been registered and can now login.');
 			} else {
-				echo "NOPE| Could not find an IP Address";
+				echo "NOPE| Error Registering User May Exist";
 			}
 			//Redirect::to('index.php');
 			//Redirect::map('home');

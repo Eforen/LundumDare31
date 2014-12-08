@@ -1,3 +1,6 @@
+<?PHP
+include_once("./core/init.php");
+?>
 <!doctype html>
 <html lang="en">
 <head>

@@ -11,7 +11,8 @@ var progHack = function(computer){
         running: true,
 
         create:function(){
-            this.comp.term.write("Hacking the all the tubes in the interwebz!");
+            this.comp.term.clear();
+            this.comp.term.write("\n\nHacking the all the tubes in the interwebz!");
             this.hack();
         },
 
@@ -22,7 +23,7 @@ var progHack = function(computer){
         tick: function(){
         },
         hack: function(){
-            $.ajax("http://ld.ubersoftech.com/api/login.php?u="+this.username+"&p="+this.password, {
+            $.ajax("http://ld.ubersoftech.com/api/hack.php", {
                 context:this,
                 success: function(data) {
                     //this.comp.term.write(data);
@@ -31,12 +32,12 @@ var progHack = function(computer){
                         this.comp.crp= new progCMD(this.comp);
                     } else {
                         r = data.split("|");
-                        if(r[1]>0) this.comp.term.write("\n\nYou are so 1337 you p0wn the all the internetz and get all the Po0n!\n\nYou managed to get $"+r[1]+" Your so awesome you now have $"+r[2]);
+                        if(r[1]>0) this.comp.term.write("\n\nYou are so 1337 you p0wn the all the internetz and get all the Po0n!\n\nYou managed to get $"+Number(r[1]).toLocaleString()+" Your so awesome you now have $"+Number(r[2]).toLocaleString());
                         if(r[1]==0) this.comp.term.write("\n\nYou did not get squat");
                         if(r[1]<0) {
-                            this.comp.term.write("\n\nYou are so not 1337 you accidentally p0wn your own bank account and lose $"+(r[1]*-1)+".");
-                            if(r[2] >0) this.comp.term.write(" You still have have $"+r[2]+" so its ok... Right?..");
-                            if(r[2] == 0) this.comp.term.write(" Your totally out of $"+r[2]+" soo much suck!! UNLUCKY!!!");
+                            this.comp.term.write("\n\nYou are so not 1337 you accidentally p0wn your own bank account and lose $"+Number((r[1]*-1)).toLocaleString()+".");
+                            if(r[2] >0) this.comp.term.write(" You still have have $"+Number(r[2]).toLocaleString()+" so its ok... Right?..");
+                            if(r[2] == 0) this.comp.term.write(" Your totally out of $ soo much suck!! UNLUCKY!!!");
                         }
                         this.running = false;
                     }

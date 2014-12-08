@@ -7,7 +7,7 @@ include_once("../core/init.php");
  * Time: 4:27 PM
  */
 
-$m=rand(-1000, 10000);
+$m=rand(-4000, 5000);
 $u=new User();
 if($u->exists()){
 	if($u->money()+$m>0)$u->setMoney($u->money()+$m);

@@ -64,7 +64,7 @@ class User
 		//echo "find".$GLOBALS['config']['root']['server']."/data/players/".strtolower($user).".player";
 		if(file_exists($GLOBALS['config']['root']['server']."/data/players/".strtolower($user).".player")) {
 			//echo "found";
-			$lines = file("../data/players/".strtolower($user).".player");//file in to an array
+			$lines = file($GLOBALS['config']['root']['server']."/data/players/".strtolower($user).".player");//file in to an array
 			$this->_id=strtolower($user);
 			$this->_username=trim($lines[1]);
 			$this->_password=trim($lines[2]);
@@ -120,24 +120,23 @@ class User
 	}
 
 	public function money(){
-		return $this->_ip;
+		return (int)($this->_money);
 	}
 
-	public function setMoney(){
-		return $this->_money;
+	public function setMoney($money){
+		$this->_money = $money;
 	}
 
 	public function save(){
-		if(!file_exists($GLOBALS['config']['root']['server']."/data/players/".strtolower($username).".player")){
+		if(file_exists($GLOBALS['config']['root']['server']."/data/players/".$this->_id.".player")){
 			//open
-			$myFile = $GLOBALS['config']['root']['server']."/data/players/".strtolower($username).".player";
-			$f = fopen(addslashes(strtolower($_GET['u'])).".player", "w") or die("Server Error: Player File Corrupt!");
+			$myFile = $GLOBALS['config']['root']['server']."/data/players/".$this->_id.".player";
+			$f = fopen($myFile, "w") or die("Server Error: Player File Corrupt!");
 			fwrite($f, $this->_ip."\n");
 			fwrite($f, $this->_username."\n");
 			fwrite($f, $this->_password."\n");
-			fwrite($f, $this->_money."\n");
+			fwrite($f, $this->_money);
 			fclose($f);
-			$ip->save();
 		}
 	}
 	
