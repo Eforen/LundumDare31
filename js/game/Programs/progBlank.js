@@ -4,10 +4,10 @@
 
 nop = "nope";
 
-var progBlank = function(terminal){
+var progBlank = function(computer){
     //Set Stuff Up Vars and functions. (the "this" Scope)
     var object = {
-        term: nop,
+        comp: nop,
         running: true,
 
         create:function(){
@@ -19,7 +19,7 @@ var progBlank = function(terminal){
     };
 
     //Do Constructor
-    object.term = terminal; //pass in the game var.
+    object.comp = computer; //pass in the game var.
     object.create();
 
     //return object "instance"

@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <title>JackIn Jam</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/phaser.js"></script>
     <script type="text/javascript" src="js/game/DisplayAdapter.js"></script>
     <script type="text/javascript" src="js/game/TerminalDrivers/TermTypeout.js"></script>
     <script type="text/javascript" src="js/game/TerminalDriver.js"></script>
+    <script type="text/javascript" src="js/game/Programs/progBoot.js"></script>
+    <script type="text/javascript" src="js/game/Programs/progLogin.js"></script>
+    <script type="text/javascript" src="js/game/Computer.js"></script>
     <style type="text/css">
         body {
             margin: 0;
@@ -18,7 +22,7 @@
 <script type="text/javascript">
 
     var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
-    var display;
+    var comp;
 
     var ScreenArea = {w:650, h:315}
     var DefaultConsoleSettings = {Size:14, w:79, h:23}
@@ -30,7 +34,7 @@
         //game.stage.scale.refresh();
         game.load.image('GameMask', 'assets/GameAreaMid.png');
         game.load.image('MonitorCover', 'assets/GameAreaTop.png');
-        game.load.audio('sfx', 'assets/sounds/140773__qubodup__computer-beep-sfx-for-videogames.wav');
+        //game.load.audio('sfx', 'assets/sounds/140773__qubodup__computer-beep-sfx-for-videogames.wav');
     }
 
     var text;
@@ -38,12 +42,12 @@
 
     var keySpace, keyPlus, keyMinus;
 
-    var fx;
+    //var fx;
 
     var crp; //Currently Running Program
 
     function boop(){
-        fx.play();
+        //fx.play();
     }
 
     function create() {
@@ -53,30 +57,48 @@
 
         //this.display.set("00:╒════╗\n01:│▲►▼◄║\n02:╘════╝\n03:********\n04:* ▲►▼◄ *\n05:********\n06:\n07:\n08:\n09:\n10:\n11:\n12:\n13:\n14:\n15:\n16:\n17:\n18:\n19:\n20:\n21:\n22:\n23:\n24:\n25:", [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 0, 0);
 
+        this.comp = new Computer(this.game);
         this.game.add.sprite(0, 0, 'GameMask');
         this.game.add.sprite(0, 0, 'MonitorCover');
 
-        cursors = game.input.keyboard.createCursorKeys();
+        //cursors = game.input.keyboard.createCursorKeys();
+        this.game.input.keyboard.addCallbacks(this, inputRAW, null, wtfinput);
 
-        this.keySpace = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+
+        //this.keySpace = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+        //this.keyBackspace = game.input.keyboard.addKey(Phaser.Keyboard.BACKSPACE);
+        game.input.keyboard.addKeyCapture([Phaser.Keyboard.BACKSPACE,Phaser.Keyboard.SPACEBAR,Phaser.Keyboard.ENTER]);
         this.keyPlus = game.input.keyboard.addKey(Phaser.Keyboard.NUMPAD_ADD);
         this.keyMinus = game.input.keyboard.addKey(Phaser.Keyboard.NUMPAD_SUBTRACT);
 
-        fx = game.add.audio('sfx');
+        //fx = game.add.audio('sfx');
     }
 
     var lastMove= "zomgwtf", movetime = 1;
 
     var first =true;
+
+    function inputRAW(event){
+        if(event.keyCode == Phaser.Keyboard.BACKSPACE) {
+            this.comp.input("\b");
+        }
+        if(event.keyCode == Phaser.Keyboard.ENTER) {
+            this.comp.input("\r");
+        }
+    }
+
+    function wtfinput(char){
+        this.comp.input(char);
+    }
+
     function update() {
         if(first){
             first=false;
-            fx.play();
+            //fx.play();
         }
         if(lastMove=="zomgwtf") lastMove=game.time.now;
 
-        this.display.tick();
-        this.term.tick();
+        this.comp.tick();
         /*
         //  For example this checks if the up or down keys are pressed and moves the camera accordingly.
         if (cursors.up.isDown && game.time.elapsedSecondsSince(lastMove)>movetime)

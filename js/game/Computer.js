@@ -4,7 +4,7 @@
 
 nop = "nope";
 
-var computer = function(game){
+var Computer = function(game){
     //Set Stuff Up Vars and functions. (the "this" Scope)
     var object = {
         game: nop,
@@ -15,19 +15,29 @@ var computer = function(game){
             this.game = game;
             this.display = new DisplayAdapter(game);
             this.term = new TerminalDriver(this.display);
-            this.cpr = new progBoot(term);
+            //this.crp = new progBoot(this);
+            this.crp = new progLogin(this);
+        },
+
+        input: function (input){
+            this.term.input(input);
         },
 
         tick: function(){
-           if(!this.crp.running){
-               this.crp = new progCMD(term);
-           }
+            this.term.tick();
+            this.display.tick();
+
+            this.crp.tick();
+
+            if(!this.crp.running){
+                this.crp = new progCMD(this);
+            }
         }
     };
 
     //Do Constructor
-    object.term = terminal; //pass in the game var.
-    object.create(minTime, maxTime, str);
+    //object.term = game; //pass in the game var.
+    object.create(game);
 
     //return object "instance"
     return object;

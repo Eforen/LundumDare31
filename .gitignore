@@ -1,0 +1,5 @@
+*.player
+*.bank
+*.computer
+*.ip
+data/*ipmap*

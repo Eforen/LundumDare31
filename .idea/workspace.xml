@@ -2,14 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f64fbeb4-b330-4c34-bca8-341852f4bcad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/game/Computer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/game/TerminalDrivers/TermOvertime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/blocktest" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/players/placeholder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/game/Programs/progBlank.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/game/Programs/progBoot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/game/Programs/progLogin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sounds/135059__mzui__computer-room-ambience-beep-small-room-noisy.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sounds/140773__qubodup__computer-beep-sfx-for-videogames.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sounds/250104__phatcorns__computer-beep.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/Config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/Cookie.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/Hash.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/IP.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/Input.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/Session.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/Token.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/User.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/Validate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/info.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/info.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/init.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/game/Programs/progRegister.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/propertys.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/reg.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/sanitize.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/Computer.js" afterPath="$PROJECT_DIR$/js/game/Computer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/DisplayAdapter.js" afterPath="$PROJECT_DIR$/js/game/DisplayAdapter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Eforen.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Eforen.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/TerminalDriver.js" afterPath="$PROJECT_DIR$/js/game/TerminalDriver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/Programs/progBlank.js" afterPath="$PROJECT_DIR$/js/game/Programs/progBlank.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/Programs/progBoot.js" afterPath="$PROJECT_DIR$/js/game/Programs/progBoot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/Programs/progLogin.js" afterPath="$PROJECT_DIR$/js/game/Programs/progLogin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/game.html" afterPath="$PROJECT_DIR$/game.html" />
     </list>
@@ -34,91 +55,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Computer.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/game/Computer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="38" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="progBoot.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/game/Programs/progBoot.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="37" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="918">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="progBlank.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/game/Programs/progBlank.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="progLogin.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/game/Programs/progLogin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="13" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+            <state line="33" column="49" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0" vertical-offset="241" max-vertical-offset="1173">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/.htaccess">
+      <file leaf-file-name="progRegister.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/game/Programs/progRegister.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+            <state line="16" column="65" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1173">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blocktest" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/blocktest">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="17" selection-start="0" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="placeholder" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/players/placeholder">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eforen.player" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="eforen.player" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/players/eforen.player">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="652">
+            <state line="1" column="5" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DisplayAdapter.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="21" selection-start="146" selection-end="146" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="629">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reg.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/reg.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="38" selection-start="245" selection-end="245" vertical-scroll-proportion="-4.576923" vertical-offset="136" max-vertical-offset="1292">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="14" selection-start="1394" selection-end="1394" vertical-scroll-proportion="-4.6153846" vertical-offset="815" max-vertical-offset="2516">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Input.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/Input.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="29" selection-start="412" selection-end="412" vertical-scroll-proportion="-10.653846" vertical-offset="97" max-vertical-offset="1105">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DisplayAdapter.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/game/DisplayAdapter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="28" selection-start="2004" selection-end="2004" vertical-scroll-proportion="0.0" vertical-offset="1380" max-vertical-offset="2040">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TerminalDriver.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/game/TerminalDriver.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="56" selection-start="1327" selection-end="1336" vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1139">
+            <state line="51" column="39" selection-start="1970" selection-end="1970" vertical-scroll-proportion="0.48939395" vertical-offset="544" max-vertical-offset="2108">
               <folding />
             </state>
           </provider>
@@ -137,27 +140,41 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Game.html" />
-        <option value="$PROJECT_DIR$/js/game/DisplayAdapter.js" />
         <option value="$PROJECT_DIR$/js/game/TerminalDrivers/TermTypeout.js" />
-        <option value="$PROJECT_DIR$/js/game/TerminalDriver.js" />
         <option value="$PROJECT_DIR$/js/game/TerminalDrivers/TermOvertime.js" />
-        <option value="$PROJECT_DIR$/js/game/Programs/progBlank.js" />
-        <option value="$PROJECT_DIR$/js/game/Computer.js" />
-        <option value="$PROJECT_DIR$/game.html" />
-        <option value="$PROJECT_DIR$/js/game/Programs/progBoot.js" />
-        <option value="$PROJECT_DIR$/js/game/Programs/progLogin.js" />
         <option value="$PROJECT_DIR$/data/.htaccess" />
         <option value="$PROJECT_DIR$/data/blocktest" />
         <option value="$PROJECT_DIR$/data/players/placeholder" />
+        <option value="$PROJECT_DIR$/data/players/eforen.player" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/data/ipmap" />
+        <option value="$PROJECT_DIR$/api/info.php" />
+        <option value="$PROJECT_DIR$/info.php" />
+        <option value="$PROJECT_DIR$/classes/ipmap.php" />
+        <option value="$PROJECT_DIR$/classes/Game.php" />
+        <option value="$PROJECT_DIR$/classes/IP.php" />
+        <option value="$PROJECT_DIR$/js/game/Programs/progBlank.js" />
+        <option value="$PROJECT_DIR$/js/game/Programs/progBoot.js" />
+        <option value="$PROJECT_DIR$/game.html" />
+        <option value="$PROJECT_DIR$/js/game/TerminalDriver.js" />
+        <option value="$PROJECT_DIR$/js/game/Programs/progLogin.js" />
+        <option value="$PROJECT_DIR$/js/game/DisplayAdapter.js" />
+        <option value="$PROJECT_DIR$/core/init.php" />
+        <option value="$PROJECT_DIR$/js/game/Computer.js" />
+        <option value="$PROJECT_DIR$/api/reg.php" />
+        <option value="$PROJECT_DIR$/classes/Cookie.php" />
+        <option value="$PROJECT_DIR$/classes/Validate.php" />
+        <option value="$PROJECT_DIR$/classes/User.php" />
+        <option value="$PROJECT_DIR$/api/login.php" />
+        <option value="$PROJECT_DIR$/js/game/Programs/progRegister.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="402" />
-    <option name="y" value="58" />
+    <option name="x" value="389" />
+    <option name="y" value="63" />
     <option name="width" value="1515" />
     <option name="height" value="958" />
   </component>
@@ -215,7 +232,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PSDs" />
+              <option name="myItemId" value="simple" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -248,28 +265,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LundumDare31" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LundumDare31" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TerminalDrivers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,6 +287,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Programs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LundumDare31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LundumDare31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="functions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -337,6 +346,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LundumDare31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LundumDare31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LundumDare31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LundumDare31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -359,6 +396,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LundumDare31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LundumDare31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -377,18 +428,21 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Dev\PhpstormProjects\LundumDare31\js\game\Programs" />
+      <recent name="F:\Dev\PhpstormProjects\LundumDare31\api" />
       <recent name="F:\Dev\PhpstormProjects\LundumDare31\js\game" />
       <recent name="F:\Dev\PhpstormProjects\LundumDare31\js\game\TerminalDrivers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Dev\PhpstormProjects\LundumDare31" />
       <recent name="F:\Dev\PhpstormProjects\LundumDare31\PSDs" />
       <recent name="F:\Dev\PhpstormProjects\LundumDare31\img" />
       <recent name="F:\Dev\PhpstormProjects\LundumDare31\js" />
-      <recent name="F:\Dev\PhpstormProjects\LundumDare31" />
     </key>
   </component>
   <component name="RunManager">
@@ -402,7 +456,7 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="73bd06fd-d77f-488b-ac9f-563e27e813ca" server_name="ubersoftech">
       <method />
     </configuration>
     <list size="0" />
@@ -446,31 +500,35 @@
       <created>1417940268559</created>
       <updated>1417940268559</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Working on stuff">
+      <created>1417984151405</created>
+      <updated>1417984151405</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="402" y="58" width="1515" height="958" extended-state="0" />
+    <frame x="389" y="63" width="1515" height="958" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15681544" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299817" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1921757" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09047045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15681544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299817" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18737131" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1921757" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18943034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -496,17 +554,86 @@
     <MESSAGE value="DisplayAddaper.js now working&#10;&#10;" />
     <MESSAGE value="Created Term" />
     <MESSAGE value="Created Term More" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Term More" />
+    <MESSAGE value="Working on stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/Eforen.xml">
+    <entry file="file://$PROJECT_DIR$/js/game/Programs/progBoot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586">
+        <state line="37" column="37" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game/Programs/progBlank.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game/Programs/progLogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="13" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/blocktest">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="17" selection-start="0" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/players/placeholder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/players/eforen.player">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game/DisplayAdapter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="28" selection-start="2004" selection-end="2004" vertical-scroll-proportion="0.0" vertical-offset="1380" max-vertical-offset="2040">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game/TerminalDriver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="56" selection-start="1327" selection-end="1336" vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/Eforen.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/game/TerminalDrivers/TermTypeout.js">
@@ -519,62 +646,6 @@
     <entry file="file://$PROJECT_DIR$/js/game/TerminalDrivers/TermOvertime.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="24" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="42" selection-start="1897" selection-end="1897" vertical-scroll-proportion="-11.961538" vertical-offset="556" max-vertical-offset="2312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/game/Computer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="38" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/game/DisplayAdapter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="28" selection-start="2004" selection-end="2004" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="2040">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/game/TerminalDriver.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="56" selection-start="1327" selection-end="1336" vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1139">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/game/Programs/progBlank.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/game/Programs/progBoot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="37" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="918">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/game/Programs/progLogin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673">
           <folding />
         </state>
       </provider>
@@ -593,9 +664,212 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="5" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="39" selection-end="610" vertical-scroll-proportion="0.06732673" vertical-offset="0" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="1" selection-start="101" selection-end="1527" vertical-scroll-proportion="1.0691057" vertical-offset="749" max-vertical-offset="1853">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="531">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/ipmap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game/Programs/progBlank.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="27" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game/Programs/progBoot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="56" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game/TerminalDriver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="35" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="37" max-vertical-offset="1683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game/Computer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="21" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="28" selection-start="3796" selection-end="3796" vertical-scroll-proportion="-13.423077" vertical-offset="1096" max-vertical-offset="2686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="26" selection-start="1007" selection-end="1007" vertical-scroll-proportion="-18.307692" vertical-offset="459" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="260" selection-end="260" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Token.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="707">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/IP.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="29" selection-start="3386" selection-end="3388" vertical-scroll-proportion="-7.0384617" vertical-offset="2201" max-vertical-offset="2856">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Hash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="707">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Cookie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="12" selection-start="40" selection-end="40" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="6" selection-start="6" selection-end="21" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Validate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="31" selection-start="82" selection-end="82" vertical-scroll-proportion="-2.2884614" vertical-offset="0" max-vertical-offset="1428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/players/eforen.player">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="652">
+        <state line="1" column="5" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Input.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="29" selection-start="412" selection-end="412" vertical-scroll-proportion="-10.653846" vertical-offset="97" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/_superglobals.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="384" selection-end="404" vertical-scroll-proportion="0.22206096" vertical-offset="0" max-vertical-offset="3944">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="14" selection-start="1394" selection-end="1394" vertical-scroll-proportion="-4.6153846" vertical-offset="815" max-vertical-offset="2516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="21" selection-start="146" selection-end="146" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/reg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="38" selection-start="245" selection-end="245" vertical-scroll-proportion="-4.576923" vertical-offset="136" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game/Programs/progLogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="49" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0" vertical-offset="241" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game/Programs/progRegister.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="65" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game/DisplayAdapter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="39" selection-start="1970" selection-end="1970" vertical-scroll-proportion="0.48939395" vertical-offset="544" max-vertical-offset="2108">
           <folding />
         </state>
       </provider>

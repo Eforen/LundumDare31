@@ -4,15 +4,15 @@
 
 nop = "nope";
 
-var progBoot = function(terminal){
+var progBoot = function(computer){
     //Set Stuff Up Vars and functions. (the "this" Scope)
     var object = {
-        term: nop,
+        comp: nop,
         running: true,
         firstRun: nop,
 
         create:function(){
-            this.firstRun = this.term.slowPrint(10,50, "╒════════════════════╗\n" +
+            this.firstRun = this.comp.term.slowPrint(1,20, "╒════════════════════╗\n" +
                 "│  Welcome to JackIn ║\n"+
                 "╘════════════════════╝\n"+
                 "Blue Hornet BIOS v17.2.532.15PCmQ, Lois Turns\n"+
@@ -30,18 +30,20 @@ var progBoot = function(terminal){
                 "IRD Channel 3: \n"+
                 ""
             );
+            this.firstRun.t.start();
         },
 
         tick: function(){
             if(this.firstRun.t.expired){
-                this.term.clear();
+                this.comp.term.clear();
                 this.running = false;
+                this.comp.crp = new progLogin(this.comp);
             }
         }
     };
 
     //Do Constructor
-    object.term = terminal; //pass in the game var.
+    object.comp = computer; //pass in the game var.
     object.create();
 
     //return object "instance"

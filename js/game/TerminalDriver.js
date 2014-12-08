@@ -12,13 +12,18 @@ var TerminalDriver = function(theDisplayAdapter){
 
         cursor: {x:0,y:0},
         color: 0,
+        data: nop, //Used for data that is read in when data is read in.
+        readingInput: false,
+        readingMask: nop,
 
         create:function(){
-            this.t = this.da.game.time.create(false);
+            //  Capture all key presses
+            //this.da.game.input.keyboard.addCallbacks(this, this.input, null, null);
 
+            //this.t = this.da.game.time.create(false);
             //  Start the timer running - this is important!
             //  It won't start automatically, allowing you to hook it to button events and the like.
-            this.t.start();
+            //this.t.start();
         },
 
         write:function(string, color){
@@ -28,8 +33,34 @@ var TerminalDriver = function(theDisplayAdapter){
             this.cursor.y=newpos.y;
         },
 
-        readChar:function(){
+        readLine:function(mask){
+            this.data = "";
+            this.readingInput = true;
+            if(mask!=="Undefined") this.readingMask = mask;
+        },
 
+        clear: function(){
+            this.cursor.x = 0;
+            this.cursor.y = 0;
+            this.da.clear();
+        },
+
+        input: function(input){
+            if(this.readingInput){
+                if(input === "\n" || input === "\r"){
+                    this.readingInput = false;
+                } else if(input === "\b"){
+                    if(this.data.length > 0){
+                        this.cursor.x--;
+                        this.write(" ");
+                        this.cursor.x--;
+                        this.data = this.data.substring(0, this.data.length-1);
+                    }
+                } else{
+                    this.data += input;
+                    this.write(input);
+                }
+            }
         },
 
         slowPrint:function(minTime, maxTime, str){
@@ -56,6 +87,7 @@ var TerminalDriver = function(theDisplayAdapter){
 
     //Do Constructor
     object.da = theDisplayAdapter; //pass in the game var.
+    object.create();
 
     //return object "instance"
     return object;

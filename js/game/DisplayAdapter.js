@@ -53,6 +53,10 @@ var DisplayAdapter = function(game){
                     startX=0;
                     startY++;
                 } else {
+                    if(startX >= this.dispNumCols){
+                        startX=0;
+                        startY++;
+                    }
                     if(arr) this.setChar(startX, startY, stringythingy[i], color[i]);
                     else this.setChar(startX, startY, stringythingy[i], color);
                     startX++;

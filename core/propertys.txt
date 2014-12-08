@@ -1,0 +1,18 @@
+debug							- Used to denote debug status set to true to debug. (Default: False)
+root/server						- absolute server path to root of this structure (Where the folder Core is.)
+root/web						- absolute server path to root of this structure (Where the folder Core is.)
+mysql/host						- Host name for Mysql database
+mysql/db						- Database name
+mysql/username					- Database Username
+mysql/password					- Database Password
+login/remember/cookie_name		- Name of cookie used for remembering login
+login/remember/cookie_expire	- Time until experation of cookie used for remembering login
+login/remember/session_table	- Is the name of the table in the DB that holds the user sessions (Default: 'users_session')
+session/session_name			- Dont Remember lol... //TODO: Replace this with actual thing
+session/token_name				- The name to store Token as.
+session/flash 					- Used for the name flash msgs will be stored in $_SESSION (Default: 'flash')
+users/table 					- Is the name of the table in the DB that holds the users (Default: 'user_table')
+users/groups					- Is the name of the table in the DB that holds the user groups (Default: 'user_groups')
+redirect/map					- Contains an array of pairs where key is alias name and value is target from root/web.
+redirect/externlmap				- Contains an array of pairs where key is alias name and value is target checked after redirect/map.
+games/table
