@@ -15,8 +15,8 @@ var Computer = function(game){
             this.game = game;
             this.display = new DisplayAdapter(game);
             this.term = new TerminalDriver(this.display);
-            //this.crp = new progBoot(this);
-            this.crp = new progLogin(this);
+            this.crp = new progBoot(this);
+            //this.crp = new progRegister(this);
         },
 
         input: function (input){

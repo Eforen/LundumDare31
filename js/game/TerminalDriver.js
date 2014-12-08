@@ -36,7 +36,8 @@ var TerminalDriver = function(theDisplayAdapter){
         readLine:function(mask){
             this.data = "";
             this.readingInput = true;
-            if(mask!=="Undefined") this.readingMask = mask;
+            if(typeof mask ==="undefined") this.readingMask = nop;
+            else this.readingMask = mask;
         },
 
         clear: function(){
@@ -58,7 +59,12 @@ var TerminalDriver = function(theDisplayAdapter){
                     }
                 } else{
                     this.data += input;
-                    this.write(input);
+                    if(this.readingMask==nop) {
+                        this.write(input);
+                    }
+                    else {
+                        this.write(this.readingMask);
+                    }
                 }
             }
         },

@@ -11,6 +11,7 @@ var progRegister = function(computer){
         running: true,
         username: nop,
         password: nop,
+        password2: nop,
         waiting: true,
 
         create:function(){
@@ -20,19 +21,19 @@ var progRegister = function(computer){
 
         tick: function(){
             //this.running = false;
-            if(false){
-                xmlHttp = new XMLHttpRequest();
-                xmlHttp.onreadystatechange = ProcessRequest;
-                xmlHttp.open( "GET", Url, true );
-                xmlHttp.send( null );
-            }
             if(this.waiting && !this.comp.term.readingInput) {
                 if(this.username == nop) {
                     this.username = this.comp.term.data;
-                    this.comp.term.write("\nPass: ");
+                    this.comp.term.write("\n\nWARNING: Please do not use a normal password you use anywhere else\n" +
+                    "the password you enter here can be stolen ingame with enough skill and luck\n\n" +
+                    "So what password would you like? ");
                     this.comp.term.readLine("*");
                 } else if(this.password == nop) {
                     this.password = this.comp.term.data;
+                    this.comp.term.write("\n\nConfirm Password: ");
+                    this.comp.term.readLine("*");
+                } else if(this.password2 == nop) {
+                    this.password2 = this.comp.term.data;
                     this.comp.term.write("\n\nConnecting...\n");
                     this.reg();
                     this.waiting=false;
@@ -40,10 +41,16 @@ var progRegister = function(computer){
             }
         },
         reg: function(){
-            $.ajax("http://ld.ubersoftech.com/api/login.php?u="+this.username+"&p="+this.password, {
+            $.ajax("http://ld.ubersoftech.com/api/reg.php?username="+this.username+"&password="+this.password+"&pa="+this.password2, {
                 context:this,
                 success: function(data) {
                     this.comp.term.write(data);
+                    if(data.substr(0,4)==="NOPE"){
+                        this.comp.term.clear();
+                        this.comp.crp=new progRegister(this.comp);
+                    } else {
+                        this.comp.crp=new progStartMenu(this.comp);
+                    }
                 },
                 error: function() {
                     this.comp.term.write("Comm Error trying again...\n");

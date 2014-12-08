@@ -1,5 +1,5 @@
 <?php
-session_start();
+include_once("../core/init.php");
 /**
  * Created by PhpStorm.
  * User: Eforen
@@ -11,7 +11,7 @@ if(Input::exists("get")) {
 	$validate = new Validate();
 	$validation = $validate->check($_GET,
 		[
-			'u' =>
+			'username' =>
 				[
 					'required' => true,
 					'min' => 2,
@@ -21,7 +21,7 @@ if(Input::exists("get")) {
 						'field' => 'username'
 					]
 				],
-			'p' =>
+			'password' =>
 				[
 					'required' => true,
 					'min' => 6
@@ -51,8 +51,8 @@ if(Input::exists("get")) {
 			echo '|';
 			*/
 			$ip = new IP();
-			if($ip->getUnusedIP()) {
-				$user->create($ip, Input::get('u'),Input::get('p'));
+			//if($ip->getUnusedIP()) {
+			if(($ip->getUnusedIP() || true)&&$user->create($ip, Input::get('username'),Input::get('password'))) {
 				echo('OK|You have been registered and can now login.');
 			} else {
 				echo "NOPE| Could not find an IP Address";

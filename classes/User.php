@@ -9,6 +9,7 @@ class User
 			$_ip,
 			$_username,
 			$_password,
+			$_money,
 			$_sessionName,
 			$_isLoggedIn;
 	
@@ -35,18 +36,27 @@ class User
 
 	public function create(IP $ip, $username, $pass){
 		//updated
+		//echo "starting";
+		$u = new User($username);
+		if($u->exists()) return false;
 		if(!file_exists($GLOBALS['config']['root']['server']."/data/players/".strtolower($username).".player")){
+			//echo "starting2";
 			//open
 			$myFile = $GLOBALS['config']['root']['server']."/data/players/".strtolower($username).".player";
-			$f = fopen(addslashes(strtolower($_GET['u'])).".player", "w") or die("Server Error: Player File Corrupt!");
-			fwrite($f, $ip->ip());
+			$f = fopen($myFile, "w") or die("Server Error: Player File Corrupt!");
+			fwrite($f, $ip->ip()."\n");
 			$ip->setType("p");
 			$ip->setValue(strtolower($username));
-			fwrite($f, $username);
-			fwrite($f, $pass);
+			fwrite($f, $username."\n");
+			fwrite($f, $pass."\n");
+			fwrite($f, "0");
+			fflush($f);
 			fclose($f);
 			$ip->save();
+			//echo "starting3";
+			return true;
 		}
+		return false;
 	}
 
 	public function find($user = null){
@@ -56,9 +66,10 @@ class User
 			//echo "found";
 			$lines = file("../data/players/".strtolower($user).".player");//file in to an array
 			$this->_id=strtolower($user);
-			$this->_username=$lines[1];
-			$this->_password=$lines[2];
-			$this->_ip=$lines[0];
+			$this->_username=trim($lines[1]);
+			$this->_password=trim($lines[2]);
+			$this->_ip=trim($lines[0]);
+			$this->_money = trim($lines[3]);
 			$this->_exists = true;
 			return true;
 		}
@@ -68,13 +79,15 @@ class User
 	public function login($username = null, $password = null){
 		
 		$user = $this->find($username);
-
+		//echo "<pre>",$username,":",$password,"\n";
+		//print_r($this);
+		//echo "</pre>";
 		if(!$username && !$password && $this->exists()) {
 			Session::put($this->_sessionName, $this->_id);
 			//echo '|', $this->_sessionName, ' ', $this->data()->id, '|';
 		} else{
-			//echo "found2".$user->_ip;
-			if($user && $this->_password === $password){
+			//echo "found2|".$this->_ip,"|",(trim($this->_password) === trim($password))?"wtf1":"wtf2","|";
+			if($user && (trim($this->_password) === trim($password))){
 				Session::put($this->_sessionName, $this->_id);
 
 				//echo "found np";
@@ -104,6 +117,28 @@ class User
 
 	public function ip(){
 		return $this->_ip;
+	}
+
+	public function money(){
+		return $this->_ip;
+	}
+
+	public function setMoney(){
+		return $this->_money;
+	}
+
+	public function save(){
+		if(!file_exists($GLOBALS['config']['root']['server']."/data/players/".strtolower($username).".player")){
+			//open
+			$myFile = $GLOBALS['config']['root']['server']."/data/players/".strtolower($username).".player";
+			$f = fopen(addslashes(strtolower($_GET['u'])).".player", "w") or die("Server Error: Player File Corrupt!");
+			fwrite($f, $this->_ip."\n");
+			fwrite($f, $this->_username."\n");
+			fwrite($f, $this->_password."\n");
+			fwrite($f, $this->_money."\n");
+			fclose($f);
+			$ip->save();
+		}
 	}
 	
 	public static function nameUserSession(){

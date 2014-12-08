@@ -18,10 +18,10 @@ if(Input::exists("get")) {
 		// log user in
 		$user = new User();
 		$login = $user->login(Input::get('u'), Input::get('p'));
-		echo "Debug: ", Input::get('u') , "|", Input::get('p');
+		//echo "Debug: ", Input::get('u') , "|", Input::get('p');
 
 		if($login){
-			die("OK|".$user->ip().":".$user->username());
+			die("OK|".$user->username()."@".$user->ip());
 		} else {
 			die("NOPE");
 		}

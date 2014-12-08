@@ -21,12 +21,6 @@ var progLogin = function(computer){
 
         tick: function(){
             //this.running = false;
-            if(false){
-                xmlHttp = new XMLHttpRequest();
-                xmlHttp.onreadystatechange = ProcessRequest;
-                xmlHttp.open( "GET", Url, true );
-                xmlHttp.send( null );
-            }
             if(this.waiting && !this.comp.term.readingInput) {
                 if(this.username == nop) {
                     this.username = this.comp.term.data;
@@ -45,9 +39,16 @@ var progLogin = function(computer){
                 context:this,
                 success: function(data) {
                     this.comp.term.write(data);
+                    if(data.substr(0,4)==="NOPE"){
+                        this.comp.crp=new progLogin(this.comp);
+                    } else {
+                        this.comp.term.write("\n");
+                        this.running = false;
+                    }
                 },
                 error: function() {
                     this.comp.term.write("Comm Error trying again...\n");
+                    this.login();
                 }
             });
         }
