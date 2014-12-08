@@ -27,7 +27,7 @@ var progHack = function(computer){
                 context:this,
                 success: function(data) {
                     //this.comp.term.write(data);
-                    if(data.substr(0,4)==="NOPE"){
+                    if(data.indexOf("NOPE")!=-1){
                         this.comp.term.write("\n\nYou are so not so 1337 you get locked out of the bank servers and no one cares!");
                         this.comp.crp= new progCMD(this.comp);
                     } else {

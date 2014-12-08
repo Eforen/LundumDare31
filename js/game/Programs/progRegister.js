@@ -44,9 +44,9 @@ var progRegister = function(computer){
             $.ajax("http://ld.ubersoftech.com/api/reg.php?username="+this.username+"&password="+this.password+"&pa="+this.password2, {
                 context:this,
                 success: function(data) {
+                    this.comp.term.clear();
                     this.comp.term.write(data);
-                    if(data.substr(0,4)==="NOPE"){
-                        this.comp.term.clear();
+                    if(data.indexOf("NOPE")!=-1){
                         this.comp.crp=new progRegister(this.comp);
                     } else {
                         this.comp.crp=new progStartMenu(this.comp);

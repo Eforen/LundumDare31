@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f64fbeb4-b330-4c34-bca8-341852f4bcad" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/User.php" afterPath="$PROJECT_DIR$/classes/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/hack.php" afterPath="$PROJECT_DIR$/api/hack.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/ip.php" afterPath="$PROJECT_DIR$/classes/ip.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/Programs/progHack.js" afterPath="$PROJECT_DIR$/js/game/Programs/progHack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/reg.php" afterPath="$PROJECT_DIR$/api/reg.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/Programs/progRegister.js" afterPath="$PROJECT_DIR$/js/game/Programs/progRegister.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="F:\Dev\PhpstormProjects\LundumDare31\Game.html" afterPath="$PROJECT_DIR$/game.php" />
     </list>
     <ignored path="LundumDare31.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +27,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="progHack.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="progHack.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/game/Programs/progHack.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="38" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
+            <state line="29" column="44" selection-start="794" selection-end="794" vertical-scroll-proportion="0.371875" vertical-offset="255" max-vertical-offset="1088">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="progRegister.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/game/Programs/progRegister.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="44" selection-start="1903" selection-end="1903" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1292">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tester4.player" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/players/tester4.player">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
               <folding />
             </state>
           </provider>
@@ -43,7 +57,7 @@
       <file leaf-file-name="progCMD.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/game/Programs/progCMD.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="32" selection-start="562" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+            <state line="19" column="27" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -58,19 +72,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hack.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hack.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/hack.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="1" selection-start="319" selection-end="319" vertical-scroll-proportion="0.48803827" vertical-offset="0" max-vertical-offset="627">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eforen.player" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/players/eforen.player">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+            <state line="18" column="1" selection-start="319" selection-end="319" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
@@ -79,7 +84,7 @@
       <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="23" selection-start="3454" selection-end="3454" vertical-scroll-proportion="-13.730769" vertical-offset="1989" max-vertical-offset="3094">
+            <state line="138" column="23" selection-start="3454" selection-end="3454" vertical-scroll-proportion="-7.8461537" vertical-offset="2142" max-vertical-offset="3094">
               <folding />
             </state>
           </provider>
@@ -88,7 +93,7 @@
       <file leaf-file-name="game.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="16" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="2805">
+            <state line="1" column="16" selection-start="22" selection-end="22" vertical-scroll-proportion="1.3076923" vertical-offset="51" max-vertical-offset="2805">
               <folding />
             </state>
           </provider>
@@ -98,15 +103,6 @@
         <entry file="file://$PROJECT_DIR$/api/reg.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="57" column="60" selection-start="1209" selection-end="1209" vertical-scroll-proportion="-11.692307" vertical-offset="665" max-vertical-offset="1292">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tester2.player" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/players/tester2.player">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
               <folding />
             </state>
           </provider>
@@ -155,7 +151,6 @@
         <option value="$PROJECT_DIR$/js/game/Computer.js" />
         <option value="$PROJECT_DIR$/js/game/Programs/progBoot.js" />
         <option value="$PROJECT_DIR$/js/game/Programs/progStartMenu.js" />
-        <option value="$PROJECT_DIR$/js/game/Programs/progRegister.js" />
         <option value="$PROJECT_DIR$/data/players/tester.player" />
         <option value="$PROJECT_DIR$/classes/IP.php" />
         <option value="$PROJECT_DIR$/data/players/tester3.player" />
@@ -167,8 +162,10 @@
         <option value="$PROJECT_DIR$/api/reg.php" />
         <option value="$PROJECT_DIR$/data/players/eforen.player" />
         <option value="$PROJECT_DIR$/classes/User.php" />
-        <option value="$PROJECT_DIR$/js/game/Programs/progHack.js" />
         <option value="$PROJECT_DIR$/api/hack.php" />
+        <option value="$PROJECT_DIR$/js/game/Programs/progRegister.js" />
+        <option value="$PROJECT_DIR$/data/players/tester4.player" />
+        <option value="$PROJECT_DIR$/js/game/Programs/progHack.js" />
       </list>
     </option>
   </component>
@@ -521,7 +518,11 @@
       <created>1418010054651</created>
       <updated>1418010054651</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Smashed the &quot;last bugs&quot; I think... The Hack program was requesting from the wrong place and the user class was not saving and was not providing a number as money. Should all be fixed now...&#10;&#10;">
+      <created>1418011443664</created>
+      <updated>1418011443664</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -576,19 +577,13 @@
     <MESSAGE value="buggy" />
     <MESSAGE value="Smashed the Login and Register Bugs." />
     <MESSAGE value="Smashed the Login and Register Bugs.&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Smashed the Login and Register Bugs.&#10;&#10;" />
+    <MESSAGE value="Smashed the &quot;last bugs&quot; I think... The Hack program was requesting from the wrong place and the user class was not saving and was not providing a number as money. Should all be fixed now...&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Smashed the &quot;last bugs&quot; I think... The Hack program was requesting from the wrong place and the user class was not saving and was not providing a number as money. Should all be fixed now...&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/game/Programs/progBlank.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/game/Programs/progLogin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="13" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="544">
@@ -809,13 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/game/Programs/progRegister.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="13" selection-start="1523" selection-end="1523" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1292">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/ip.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="32" selection-start="914" selection-end="914" vertical-scroll-proportion="-3.1923077" vertical-offset="563" max-vertical-offset="2924">
@@ -865,13 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="23" selection-start="3454" selection-end="3454" vertical-scroll-proportion="-13.730769" vertical-offset="1989" max-vertical-offset="3094">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="34" selection-start="515" selection-end="515" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="629">
@@ -879,30 +860,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game.php">
+    <entry file="file://$PROJECT_DIR$/api/hack.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="16" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="2805">
+        <state line="18" column="1" selection-start="319" selection-end="319" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="408">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/game/Programs/progCMD.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="562" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+        <state line="19" column="27" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="16" selection-start="22" selection-end="22" vertical-scroll-proportion="1.3076923" vertical-offset="51" max-vertical-offset="2805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/players/tester4.player">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="653">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game/Programs/progRegister.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="44" selection-start="1903" selection-end="1903" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="23" selection-start="3454" selection-end="3454" vertical-scroll-proportion="-7.8461537" vertical-offset="2142" max-vertical-offset="3094">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/game/Programs/progHack.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/hack.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="319" selection-end="319" vertical-scroll-proportion="0.48803827" vertical-offset="0" max-vertical-offset="627">
+        <state line="29" column="44" selection-start="794" selection-end="794" vertical-scroll-proportion="0.371875" vertical-offset="255" max-vertical-offset="1088">
           <folding />
         </state>
       </provider>
