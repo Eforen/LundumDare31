@@ -37,7 +37,7 @@ var progBoot = function(computer){
             if(this.firstRun.t.expired){
                 this.comp.term.clear();
                 this.running = false;
-                this.comp.crp = new progLogin(this.comp);
+                this.comp.crp = new progStartMenu(this.comp);
             }
         }
     };
