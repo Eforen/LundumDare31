@@ -41,7 +41,7 @@ var progRegister = function(computer){
             }
         },
         reg: function(){
-            $.ajax("http://ld.ubersoftech.com/api/reg.php?username="+this.username+"&password="+this.password+"&pa="+this.password2, {
+            $.ajax("http://ld.ubersoftech.com/LD31/api/reg.php?username="+this.username+"&password="+this.password+"&pa="+this.password2, {
                 context:this,
                 success: function(data) {
                     this.comp.term.clear();

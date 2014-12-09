@@ -35,7 +35,7 @@ var progLogin = function(computer){
             }
         },
         login: function(){
-            $.ajax("http://ld.ubersoftech.com/api/login.php?u="+this.username+"&p="+this.password, {
+            $.ajax("http://ld.ubersoftech.com/LD31/api/login.php?u="+this.username+"&p="+this.password, {
                 context:this,
                 success: function(data) {
                     this.comp.term.write(data);

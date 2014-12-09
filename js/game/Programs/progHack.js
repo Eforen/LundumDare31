@@ -12,7 +12,7 @@ var progHack = function(computer){
 
         create:function(){
             this.comp.term.clear();
-            this.comp.term.write("\n\nHacking the all the tubes in the interwebz!");
+            this.comp.term.write("\n\nHacking the all the tubes in the interwebz!")
             this.hack();
         },
 
@@ -23,7 +23,7 @@ var progHack = function(computer){
         tick: function(){
         },
         hack: function(){
-            $.ajax("http://ld.ubersoftech.com/api/hack.php", {
+            $.ajax("http://ld.ubersoftech.com/LD31/api/hack.php", {
                 context:this,
                 success: function(data) {
                     //this.comp.term.write(data);

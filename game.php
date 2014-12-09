@@ -92,6 +92,9 @@ include_once("./core/init.php");
         if(event.keyCode == Phaser.Keyboard.ENTER) {
             this.comp.input("\r");
         }
+	    if(event.keyCode == Phaser.Keyboard.SPACEBAR) {
+		    this.comp.input(" ");
+	    }
     }
 
     function wtfinput(char){
